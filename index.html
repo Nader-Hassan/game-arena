@@ -4,13 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Games website</title>
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
-  <body>
+  <body class="bg-dark text-light">
+    <header class="border-bottom border-1 border-gray-800">
+        <div class="max-w-7xl m-auto ">
+        <nav class="navbar navbar-expand-lg bg-dark py-3 px-4">
+        <div class="container-fluid px-0">
+          <div>
+            <i class="fa-solid fa-gamepad me-2 text-primary fs-5"></i>
+            <a class="navbar-brand text-primary fs-5 fw-bold me-4" href="#"
+              >GameArena</a
+            >
+          </div>
+          <button
+            class="navbar-toggler text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-4 "></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto border-bottom border-lg-hidden border-1 border-gray-800 mt-4 mt-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-primary me-lg-2 mb-3 mb-lg-0"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#"> OUR GAMES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#">What We Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light mb-3 mb-lg-0" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row  gap-3 align-items-lg-center mt-3 mt-lg-0">
+              <a href="#" class="text-decoration-none ntf-link text-light" 
+                ><i class="fa-regular fa-bell fs-18"></i
+              ><span class="d-lg-none ms-2">Notfiactions</span></a>
+              <a href="#" class="text-decoration-none text-light message-link"
+                ><i
+                  class="fa-regular fa-message fs-18"></i
+              ><span class="d-lg-none ms-2">Messages</span></a>
+
+              <button
+                class="btn bg-primary py-2 px-4 fw-bold text-dark me-3 rounded-3 brand-hover-effect">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+        </div>
+    </header>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
