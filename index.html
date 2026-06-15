@@ -7,72 +7,136 @@
     <link rel="icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/utilites.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body class="bg-dark text-light">
-    <header class="border-bottom border-1 border-gray-800">
-        <div class="max-w-7xl m-auto ">
+    <header
+      class="border-bottom border-1 border-gray-800 position-fixed top-0 end-0 start-0 bg-dark z-3">
+      <div class="max-w-7xl m-auto">
         <nav class="navbar navbar-expand-lg bg-dark py-3 px-4">
-        <div class="container-fluid px-0">
-          <div>
-            <i class="fa-solid fa-gamepad me-2 text-primary fs-5"></i>
-            <a class="navbar-brand text-primary fs-5 fw-bold me-4" href="#"
-              >GameArena</a
-            >
-          </div>
-          <button
-            class="navbar-toggler text-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars fs-4 "></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto border-bottom border-lg-hidden border-1 border-gray-800 mt-4 mt-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-primary me-lg-2 mb-3 mb-lg-0"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
+          <div class="container-fluid px-0">
+            <div>
+              <i class="fa-solid fa-gamepad me-2 text-primary fs-5"></i>
+              <a class="navbar-brand text-primary fs-5 fw-bold me-4" href="#"
+                >GameArena</a
+              >
+            </div>
+            <button
+              class="navbar-toggler text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fs-4"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav me-auto border-bottom border-lg-hidden border-1 border-gray-800 mt-4 mt-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-primary me-lg-2 mb-3 mb-lg-0"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#">
+                    OUR GAMES</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#"
+                    >What We Do</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#"
+                    >Our Team</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light mb-3 mb-lg-0" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+              <div
+                class="d-flex flex-column flex-lg-row gap-3 align-items-lg-center mt-3 mt-lg-0">
+                <a href="#" class="text-decoration-none ntf-link text-light"
+                  ><i class="fa-regular fa-bell fs-18"></i
+                  ><span class="d-lg-none ms-2">Notfiactions</span></a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#"> OUR GAMES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#">What We Do</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#">Our Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light mb-3 mb-lg-0" href="#">Contact Us</a>
-              </li>
-            </ul>
-            <div class="d-flex flex-column flex-lg-row  gap-3 align-items-lg-center mt-3 mt-lg-0">
-              <a href="#" class="text-decoration-none ntf-link text-light" 
-                ><i class="fa-regular fa-bell fs-18"></i
-              ><span class="d-lg-none ms-2">Notfiactions</span></a>
-              <a href="#" class="text-decoration-none text-light message-link"
-                ><i
-                  class="fa-regular fa-message fs-18"></i
-              ><span class="d-lg-none ms-2">Messages</span></a>
+                <a href="#" class="text-decoration-none text-light message-link"
+                  ><i class="fa-regular fa-message fs-18"></i
+                  ><span class="d-lg-none ms-2">Messages</span></a
+                >
 
+                <button
+                  class="btn bg-primary py-2 px-4 fw-bold text-dark me-3 rounded-3 brand-hover-effect">
+                  Sign In
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section id="hero" class="md-bg-fixed d-flex align-items-center">
+        <div class="container px-3 py-12 py-md-0 ">
+          <div class="row gap-3 flex-lg-nowrap align-items-center">
+            <div class="col-12 col-lg-6 text-center text-lg-start px-4">
+              <h1
+                class="days-one d-flex flex-column fw-bold text-4xl sm-text-5xl lg-text-6xl mb-4 leading-tight">
+                THE ULTIMATE<span class="text-primary">GAMING</span
+                ><span>EXPERIENCE</span>
+              </h1>
+              <p
+                class="text-sm sm-text-base text-gray-300 leading-relaxed mb-4">
+                Join millions of gamers worldwide in the most competitive
+                eSports tournaments. Experience next-level gaming with
+                cutting-edge technology and endless possibilities.
+              </p>
+                 <div class="d-flex flex-column flex-sm-row gap-md-4 justify-content-lg-start justify-content-center gap-3 mb-8 mb-lg-0">
               <button
-                class="btn bg-primary py-2 px-4 fw-bold text-dark me-3 rounded-3 brand-hover-effect">
-                Sign In
+                class="btn bg-primary py-3 px-6 sm-px-8 fw-bold text-dark rounded-3 brand-hover-effect">
+                Start Gaming Now
               </button>
+              <button
+                class="btn bg-transparent py-3 px-6 sm-px-8 fw-bold text-primary border border-1 border-primary rounded-3 brand-hover-effect hero-btn-hover">
+                Watch Tournaments
+              </button>
+            </div>
+            </div>
+            <div class="col-12 col-lg-6 px-4 ">
+              <div class="position-relative custom-gradient-bg p-1 rounded-2xl">
+                <img
+                  src="./images/hero-img-C0b4IWtS.png"
+                  alt="professional esports player gaming setup with RGB keyboard, gaming chair, multiple monitors"
+                  class="w-100 rounded-xl h-64 sm-h-80 md-h-96 object-fit-cover" />
+                <div
+                  class="position-absolute -bottom-4 -left-4 sm--bottom-6 sm--left-6 bg-dark border border-1 border-gray-700 p-4 sm-p-6 rounded-lg shadow-xl">
+                  <div class="d-flex align-items-center gap-2 gap-sm-3">
+                    <i
+                      class="fa-solid fa-trophy text-primary text-lg sm-text-xl"></i>
+                    <div>
+                      <p class="text-xs text-gray-400 mb-0">Active Players</p>
+                      <p class="text-lg sm-text-xl fw-bold mb-0">2.5M+</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-        </div>
-    </header>
+      </section>
+    </main>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>

@@ -1,5 +1,60 @@
-@media (min-width:992px) {
-    .border-lg-hidden {
-        border: none !important;
-    }
+@media (min-width: 576px) {
+  .sm-text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .sm-text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .sm-h-80 {
+    height: 20rem;
+  }
+  .sm-p-6 {
+    padding: 1.5rem;
+  }
+  .sm--left-6 {
+    left: -1.5rem;
+  }
+  .sm--bottom-6 {
+    bottom: -1.5rem;
+  }
+  .sm-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .sm-px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .md-bg-fixed {
+    background-attachment: fixed;
+  }
+  .md-h-96 {
+    height: 24rem;
+  }
+}
+@media (min-width: 992px) {
+  .border-lg-hidden {
+    border: none !important;
+  }
+  .lg-text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
 }
