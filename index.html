@@ -13,7 +13,7 @@
   </head>
   <body class="bg-dark text-light">
     <header
-      class="border-bottom border-1 border-gray-800 position-fixed top-0 end-0 start-0 bg-dark z-3">
+      class="border-bottom border-1 border-gray-800 position-fixed top-0 end-0 start-0 bg-dark z-max">
       <div class="max-w-7xl m-auto">
         <nav class="navbar navbar-expand-lg bg-dark py-3 px-4">
           <div class="container-fluid px-0">
@@ -38,14 +38,16 @@
                 class="navbar-nav me-auto border-bottom border-lg-hidden border-1 border-gray-800 mt-4 mt-lg-0">
                 <li class="nav-item">
                   <a
-                    class="nav-link active text-primary me-lg-2 mb-3 mb-lg-0"
+                    class="nav-link active text-light me-lg-2 mb-3 mb-lg-0"
                     aria-current="page"
                     href="#"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light me-lg-2 mb-3 mb-lg-0" href="#">
+                  <a
+                    class="nav-link text-primary me-lg-2 mb-3 mb-lg-0"
+                    href="#">
                     OUR GAMES</a
                   >
                 </li>
@@ -89,7 +91,7 @@
     <main>
       <!-- hero section -->
       <section id="hero" class="md-bg-fixed d-flex align-items-center">
-        <div class="container px-3 py-12 py-md-0 ">
+        <div class="container px-3 py-12 py-md-0">
           <div class="row gap-3 flex-lg-nowrap align-items-center">
             <div class="col-12 col-lg-6 text-center text-lg-start px-4">
               <h1
@@ -103,18 +105,19 @@
                 eSports tournaments. Experience next-level gaming with
                 cutting-edge technology and endless possibilities.
               </p>
-                 <div class="d-flex flex-column flex-sm-row gap-md-4 justify-content-lg-start justify-content-center gap-3 mb-8 mb-lg-0">
-              <button
-                class="btn bg-primary py-3 px-6 sm-px-8 fw-bold text-dark rounded-3 brand-hover-effect">
-                Start Gaming Now
-              </button>
-              <button
-                class="btn bg-transparent py-3 px-6 sm-px-8 fw-bold text-primary border border-1 border-primary rounded-3 brand-hover-effect hero-btn-hover">
-                Watch Tournaments
-              </button>
+              <div
+                class="d-flex flex-column flex-sm-row gap-md-4 justify-content-lg-start justify-content-center gap-3 mb-8 mb-lg-0">
+                <button
+                  class="btn bg-primary py-3 px-6 sm-px-8 fw-bold text-dark rounded-3 brand-hover-effect">
+                  Start Gaming Now
+                </button>
+                <button
+                  class="btn bg-transparent py-3 px-6 sm-px-8 fw-bold text-primary border border-1 border-primary rounded-3 brand-hover-effect hero-btn-hover">
+                  Watch Tournaments
+                </button>
+              </div>
             </div>
-            </div>
-            <div class="col-12 col-lg-6 px-4 ">
+            <div class="col-12 col-lg-6 px-4">
               <div class="position-relative custom-gradient-bg p-1 rounded-2xl">
                 <img
                   src="./images/hero-img-C0b4IWtS.png"
@@ -136,8 +139,329 @@
           </div>
         </div>
       </section>
+      <!-- latest games section -->
+      <section id="latest-games" class="py-16 md-py-24">
+        <div class="max-w-7xl mx-auto px-3 px-sm-4">
+          <div class="text-center mb-5 md-mb-16">
+            <p
+              class="subtitle-glow fw-bold text-primary position-relative d-inline-block">
+              OUR GAMES
+            </p>
+            <h2
+              class="text-3xl sm-text-4xl md-text-5xl fw-bold days-one mt-md-4">
+              Our Latest Games
+            </h2>
+          </div>
+
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div
+                    class="col-12 col-md-6 col-lg-4 latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-1-CfV33bjK.png"
+                        class="d-block w-100 duration-500"
+                        alt="two cute green alien creatures standing on a desolate planet with a green nebula in the background, 3D render, vibrant, detailed" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-gamepad me-2 text-primary"></i
+                          >ADVENTURE
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-users me-2 text-primary"></i
+                          >MULTIPLAYER
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                          Alien Companions
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 col-lg-4 d-none d-md-block latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-2-DcGt1MOH.png"
+                        class="d-block w-100 duration-500"
+                        alt="futuristic red hover car racing through a glowing green data tunnel, motion blur, cyberpunk style, cinematic lighting" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-solid fa-flag-checkered me-2 text-primary"></i
+                          >RACING
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-bolt me-2 text-primary"></i
+                          >SCI-FI
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                          Cyber Run 2099
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-3-3PuaZ95E.png"
+                        class="d-block w-100 duration-500"
+                        alt="massive alien mothership hovering over a lush green planet with smaller ships flying around it, space opera, epic scale, digital painting" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-brands fa-discord me-2 text-primary"></i
+                          >ACTION
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-microchip me-2 text-primary"></i
+                          >GEFORCE
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                        The Legend of Zelda: Tears of the Kingdom
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-4-DCWGKdgP.png"
+                        class="d-block w-100 duration-500"
+                        alt="a knight in glowing futuristic armor standing on a cliff overlooking a fantasy landscape with floating islands, high fantasy meets sci-fi" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-solid fa-shield-halved me-2 text-primary"></i
+                          >RPG
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-wand-magic-sparkles me-2 text-primary"></i
+                          >FANTASY
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                        Aetheria Chronicles
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-none d-md-block latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-5-D0uhM4CW.png"
+                        class="d-block w-100 duration-500"
+                        alt="a team of soldiers in tactical gear in a war-torn futuristic city, intense firefight, cinematic, gritty realism" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-solid fa-crosshairs me-2 text-primary"></i
+                          >SHOOTER
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-user-friends me-2 text-primary"></i
+                          >CO-OP
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                        Warfront Protocol
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-6-CJaIm3nW.png"
+                        class="d-block w-100 duration-500"
+                        alt="football player is playing with the ball" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-solid fa-dragon me-2 text-primary"></i
+                          >FOOTBALL
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-star me-2 text-primary"></i
+                          >FANTASY
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                        Shot Striker
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-7-C9aSwQWa.png"
+                        class="d-block w-100 duration-500"
+                        alt="Futuristic eSports arena interior with neon lighting, large digital screens, and professional gaming stations" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-solid fa-trophy me-2 text-primary"></i
+                          >SPORTS
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-fire me-2 text-primary"></i
+                          >LEAGUE
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                        Epic Gaming League
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 d-none d-md-block latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-8-CDS2WV4Q.png"
+                        class="d-block w-100 duration-500"
+                        alt="Massive futuristic spacecraft hovering over a red desert planet landscape with rocky mountains and two moons in a dark sky" />
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-solid fa-rocket me-2 text-primary"></i
+                          >SPACE
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-globe me-2 text-primary"></i
+                          >EXPLORATION
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                        Barren alien worlds
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block latestgame-img-hover duration-500 rounded-4 cursor-pointer">
+                    <div
+                      class="game-img-inner duration-200 rounded-4 overflow-hidden border border-2 border-black border-opacity-0 position-relative">
+                      <img
+                        src="./images/latest-games-9-BhBeVXRH.png"
+                        class="d-block w-100 duration-500"
+                        alt="Futuristic ninja warrior character concept art, wearing high-tech black and cyan glowing armor with a blue scarf and a red-lined cape."/>
+                      <div class="hover-overlay"></div>
+                      <div class="game-labels d-flex align-items-center gap-2">
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i
+                            class="fa-solid fa-hat-wizard me-2 text-primary"></i
+                          >ACTION
+                        </span>
+                        <span
+                          class="badge-custom fw-bold d-flex align-items-center bg-black bg-opacity-50">
+                          <i class="fa-solid fa-dungeon me-2 text-primary"></i
+                          >FUTURISTIC
+                        </span>
+                      </div>
+                      <div class="game-title">
+                        <h3 class="text-dark text-lg fw-bold m-0">
+                        Cloveland Quest
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 mt-md-5 mt-3">
+              <div class="d-flex gap-3">
+                <button
+                  class="carousel-control-prev w-12 h-12 sm-w-14 sm-h-14"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                  <span
+                    class="fa-solid fa-arrow-left text-gray-400 sm-text-xl"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next w-12 h-12 sm-w-14 sm-h-14"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                  <span
+                    class="fa-solid fa-arrow-right text-gray-400 sm-text-xl"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <button
+                class="btn bg-transparent w-100 md-w-auto py-3 px-6 sm-px-8 fw-bold text-primary border border-2 border-primary rounded-3 brand-hover-effect hero-btn-hover">
+                VIEW ALL GAMES
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
+<!-- <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Alien Companions
+                      </h3>
+                    </div> -->

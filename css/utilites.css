@@ -6,13 +6,13 @@
   --bs-dark: #0b0e13 !important;
   --bs-light-rgb: 241, 241, 241 !important;
   --bs-light: #f1f1f1 !important;
-  --gray-300: #d1d5dc;
   /* White & Grays */
   --white: #ffffff;
   --gray-50: #fbf9fa;
   --gray-100: #f6f3f4;
   --gray-200: #ebe6e7;
   --gray-300: #d1d5dc;
+  --gray-400: #99a1af;
   --gray-500: #6b7280;
   --gray-600: #4a5565;
   --gray-700: #364153;
@@ -178,6 +178,9 @@
 .text-gray-300 {
   color: var(--gray-300);
 }
+.text-gray-400 {
+  color: var(--gray-400);
+}
 .text-gray-500 {
   color: var(--gray-500);
 }
@@ -327,8 +330,8 @@
   line-height: 1.25rem;
 }
 .text-lg {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -431,6 +434,10 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 /* ========================= Utilities Margin =========================== */
 .mx-auto {
   margin: auto;
@@ -494,6 +501,9 @@
 .duration-200 {
   transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
 }
+.duration-500 {
+  transition: 0.5s all ;
+}
 /* ============================= Utilities Box shadow =========================== */
 .shadow-sm {
   box-shadow:
@@ -524,7 +534,7 @@
   width: 2.5rem;
 }
 .w-12 {
-  width: 3rem;
+  width: 3rem !important;
 }
 .h-2 {
   height: 0.5rem;
@@ -539,7 +549,7 @@
   height: 2.5rem;
 }
 .h-12 {
-  height: 3rem;
+  height: 3rem !important;
 }
 .h-64 {
   height: 16rem;
@@ -550,4 +560,7 @@
 }
 .display-none {
   display: none;
+}
+.z-max {
+  z-index: 1090;
 }

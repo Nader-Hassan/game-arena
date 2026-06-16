@@ -23,10 +23,29 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+  .sm-text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
   .sm-px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .subtitle-glow::before {
+    left: -80px;
+    width: 4rem;
+  }
+  .subtitle-glow::after {
+    right: -80px;
+    width: 4rem;
+  }
+  .sm-w-14 {
+    width: 3.5rem !important;
+  }
+  .sm-h-14 {
+    height: 3.5rem !important;
+  }
+  
 }
 @media (min-width: 768px) {
   .md-bg-fixed {
@@ -34,6 +53,23 @@
   }
   .md-h-96 {
     height: 24rem;
+  }
+  .md-py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .md-mb-16 {
+    margin-bottom: 4rem;
+  }
+  .subtitle-glow {
+    font-size: 1rem;
+  }
+  .md-text-5xl {
+    font-size: 3rem;
+    line-height: 1rem;
+  }
+  .md-w-auto {
+    width: auto !important;
   }
 }
 @media (min-width: 992px) {
