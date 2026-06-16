@@ -45,7 +45,6 @@
   .sm-h-14 {
     height: 3.5rem !important;
   }
-  
 }
 @media (min-width: 768px) {
   .md-bg-fixed {
@@ -59,7 +58,7 @@
     padding-bottom: 6rem;
   }
   .md-mb-16 {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
   }
   .subtitle-glow {
     font-size: 1rem;
@@ -70,6 +69,21 @@
   }
   .md-w-auto {
     width: auto !important;
+  }
+  .md-text-xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+  .md-text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+  .icon-box {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+  .g-col-md-3 {
+    grid-column: span 3;
   }
 }
 @media (min-width: 992px) {

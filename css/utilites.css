@@ -16,6 +16,7 @@
   --gray-500: #6b7280;
   --gray-600: #4a5565;
   --gray-700: #364153;
+  --gray-800: #1e2939;
   --gray-900: #111827;
   --slate-500: #64748b;
   --cloud-gray: #e5e7ebcc;
@@ -334,8 +335,8 @@
   line-height: 1.5rem !important;
 }
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -496,7 +497,7 @@
 }
 /* ============================= Utilities duration =========================== */
 .duration-300 {
-  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all;
 }
 .duration-200 {
   transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
@@ -554,6 +555,7 @@
 .h-64 {
   height: 16rem;
 }
+
 /* =========================== Common Classes ======================== */
 .cursor-pointer {
   cursor: pointer;

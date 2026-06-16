@@ -41,6 +41,7 @@
 }
 body {
   font-family: "Chakra Petch", sans-serif;
+  overflow-x: hidden;
 }
 html {
   font-size: 16px;
@@ -224,3 +225,79 @@ html {
 .game-img-inner:hover .game-title {
     transform: translateY(0);
 }
+/* ----------------------------what we do section------------------ */
+#what-we-do {
+  padding-bottom: 3rem;
+}
+#what-we-do::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 80%;
+    max-width: 600px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--bs-primary) 20%, var(--bs-primary) 80%, transparent);
+    box-shadow: 0 0 10px var(--bs-primary), 0 0 20px #cbfe1c4d;
+    transform: translate(-50%);
+}
+.services-wrapper {
+  grid-template-columns: repeat(12, 1fr);
+}
+.g-col-6 {
+  grid-column:span 6 ;
+}
+.service-card {
+    background-color: #1A1A1A;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--gray-800);
+}
+.service-card img {
+  object-fit: cover;
+}
+.icon-box {
+    background-color: var(--gray-800);
+    margin-bottom: 0.75rem; 
+}
+.corner-tri {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.top-left {
+    top: -30px;
+    left: -30px;
+    border-top: 24px solid var(--gray-600);
+    border-right: 24px solid transparent;
+}
+.bottom-right {
+    bottom: -30px;
+    right: -30px;
+    border-bottom: 24px solid var(--gray-600);
+    border-left: 24px solid transparent;
+}
+.service-card:hover {
+    border-color: var(--bs-primary);
+}
+.service-card:hover .icon-box {
+    background-color: var(--bs-primary);
+}
+.service-card:hover .icon-box i {
+    color: #1A1A1A !important;
+}
+.service-card:hover .top-left {
+    top: 10px;
+    left: 10px;
+    border-top-color: var(--bs-primary);
+}
+.service-card:hover .bottom-right {
+    bottom: 10px;
+    right: 10px;
+    border-bottom-color: var(--bs-primary);
+}
+
+
+
+
+
+
