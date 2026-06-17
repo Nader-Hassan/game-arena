@@ -295,9 +295,65 @@ html {
     right: 10px;
     border-bottom-color: var(--bs-primary);
 }
-
-
-
+/* -----------------------sponsors section------------------- */
+.logo-track {
+    width: max-content;
+}
+.logo-box {
+    width: 96px; 
+    height: 96px;
+}
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.scroll-left {
+    animation: scrollLeft linear infinite 25s;
+}
+.scroll-right {
+    animation: scrollRight linear infinite 25s;
+}
+@keyframes scrollLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+@keyframes scrollRight {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+.fade-overlay-left, .fade-overlay-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    z-index: 2;
+    pointer-events: none;
+}
+.fade-overlay-left {
+    left: 0;
+    background: linear-gradient(to right, #0f1113, transparent);
+}
+.fade-overlay-right {
+    right: 0;
+    background: linear-gradient(to left, #0f1113, transparent);
+}
+.glow-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px; 
+  height: 350px;
+  z-index: -10;
+  background: radial-gradient(
+    ellipse at center, 
+    rgba(var(--bs-primary-rgb), 0.85) 0%, 
+    rgba(var(--bs-primary-rgb), 0) 70%
+  );
+  pointer-events: none;
+}
 
 
 
