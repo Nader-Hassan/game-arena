@@ -12,12 +12,12 @@
   --gray-100: #f6f3f4;
   --gray-200: #ebe6e7;
   --gray-300: #d1d5dc;
-  --gray-400: #99a1af;
+  --gray-400: #9ca3af;
   --gray-500: #6b7280;
   --gray-600: #4a5565;
   --gray-700: #364153;
   --gray-800: #1e2939;
-  --gray-900: #111827;
+  --gray-900: #101829;
   --slate-500: #64748b;
   --cloud-gray: #e5e7ebcc;
   --blue-grey-800: #374151;
@@ -296,7 +296,7 @@
   border-color: var(--gray-200) !important;
 }
 .border-gray-700 {
-   border-color: var(--gray-700) !important;
+  border-color: var(--gray-700) !important;
 }
 .border-green-100 {
   border-color: var(--green-100) !important;
@@ -323,12 +323,12 @@
   line-height: 1rem;
 }
 .text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
 }
 .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
 }
 .text-lg {
   font-size: 1.125rem !important;
@@ -446,6 +446,10 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 /* ========================= Utilities Margin =========================== */
 .mx-auto {
   margin: auto;
@@ -502,6 +506,9 @@
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-8 {
+  gap: 2rem;
+}
 /* ============================= Utilities duration =========================== */
 .duration-300 {
   transition: 0.3s all;
@@ -510,7 +517,7 @@
   transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
 }
 .duration-500 {
-  transition: 0.5s all ;
+  transition: 0.5s all;
 }
 /* ============================= Utilities Box shadow =========================== */
 .shadow-sm {
@@ -561,6 +568,9 @@
 }
 .h-64 {
   height: 16rem;
+}
+.h-80 {
+  height: 20rem;
 }
 
 /* =========================== Common Classes ======================== */

@@ -241,7 +241,7 @@ html {
     box-shadow: 0 0 10px var(--bs-primary), 0 0 20px #cbfe1c4d;
     transform: translate(-50%);
 }
-.services-wrapper {
+.grid-system-12 {
   grid-template-columns: repeat(12, 1fr);
 }
 .g-col-6 {
@@ -310,10 +310,10 @@ html {
     border-radius: 12px;
 }
 .scroll-left {
-    animation: scrollLeft linear infinite 25s;
+    animation: scrollLeft linear infinite 50s;
 }
 .scroll-right {
-    animation: scrollRight linear infinite 25s;
+    animation: scrollRight linear infinite 50s;
 }
 @keyframes scrollLeft {
     from { transform: translateX(0); }
@@ -333,11 +333,11 @@ html {
 }
 .fade-overlay-left {
     left: 0;
-    background: linear-gradient(to right, #0f1113, transparent);
+    background: linear-gradient(to right,var(--gray-900), transparent);
 }
 .fade-overlay-right {
     right: 0;
-    background: linear-gradient(to left, #0f1113, transparent);
+    background: linear-gradient(to left,var(--gray-900), transparent);
 }
 .glow-effect {
   position: absolute;
@@ -354,6 +354,33 @@ html {
   );
   pointer-events: none;
 }
-
-
-
+/* -----------------team members section------------------------------- */
+.g-col-12 {
+  grid-column: span 12;
+}
+.team-member-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 100%;
+    backdrop-filter: grayscale() brightness(.9);
+    transition: transform .8s cubic-bezier(.4, 0, .2, 1);
+    transform: translateY(0);
+}
+.team-member-card:hover.team-member-card::after {
+  transform: translateY(-100%);
+}
+.card-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem; 
+    z-index: 2;
+}
+.rotated-label {
+    writing-mode: vertical-rl;
+}
