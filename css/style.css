@@ -46,12 +46,19 @@ body {
 html {
   font-size: 16px;
 }
+section {
+  scroll-margin-top: 75px; 
+}
 .days-one {
   font-family: "DaysOne";
 }
+::selection {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-dark) !important;
+}
 /* ------------------------------------------------------------------------------------ */
-.fs-18 {
-  font-size: 1.125rem;
+.nav-item .nav-link.active.text-light {
+    color: var(--bs-primary) !important;
 }
 .navbar-nav .nav-link:hover,
 .ntf-link:hover,
@@ -89,12 +96,6 @@ html {
   box-shadow: none !important;
   user-select: none;
 }
-.border-gray-800 {
-  border-color: #1e2939 !important;
-}
-.max-w-7xl {
-  max-width: 80rem;
-}
 /* ---------------------------------hero section --------------------------------------------- */
 #hero {
   background-image:
@@ -106,18 +107,11 @@ html {
   padding: 7.5rem 0 4rem;
 }
 .leading-relaxed {
-  line-height: 1.625;
+  line-height: 1.625 !important;
 }
 .hero-btn-hover:hover {
   color: var(--bs-dark) !important;
   transition: 0.15s all;
-}
-.custom-gradient-bg {
-  background: linear-gradient(
-    to right,
-    var(--bs-primary),
-    var(--green-500)
-  ) !important;
 }
 .-left-4 {
   left: -1rem;
@@ -225,6 +219,11 @@ html {
 .game-img-inner:hover .game-title {
   transform: translateY(0);
 }
+.custom-btn-hover:hover {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-dark) !important;
+  transition: 0.15s all;
+}
 /* ----------------------------what we do section------------------ */
 #what-we-do {
   padding-bottom: 3rem;
@@ -249,19 +248,10 @@ html {
     0 0 20px #cbfe1c4d;
   transform: translate(-50%);
 }
-.grid-system-12 {
-  grid-template-columns: repeat(12, 1fr);
-}
-.g-col-6 {
-  grid-column: span 6;
-}
 .service-card {
   background-color: #1a1a1a;
   aspect-ratio: 1 / 1;
   border: 1px solid var(--gray-800);
-}
-.service-card img {
-  object-fit: cover;
 }
 .icon-box {
   background-color: var(--gray-800);
@@ -372,9 +362,6 @@ html {
   pointer-events: none;
 }
 /* -----------------team members section------------------------------- */
-.g-col-12 {
-  grid-column: span 12;
-}
 .team-member-card::after {
   content: "";
   position: absolute;
@@ -413,9 +400,6 @@ html {
   width: 4rem;
   height: 4rem;
 }
-.bg-neon-gradient {
-  background: linear-gradient(to right, var(--bs-primary), var(--green-400));
-}
 .social-icon:hover {
   background-color: color-mix(
     in oklab,
@@ -440,4 +424,8 @@ html {
 .form-check-input:checked {
   background-color: var(--gray-700);
   border-color: var(--bs-primary);
+}
+/* ----------------------footer section-------------------- */
+.hover-text-primary:hover {
+  color: var(--bs-primary);
 }
