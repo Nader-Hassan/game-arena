@@ -308,10 +308,10 @@ section {
   border-radius: 12px;
 }
 .scroll-left {
-  animation: scrollLeft linear infinite 50s;
+  animation: scrollLeft linear infinite 25s;
 }
 .scroll-right {
-  animation: scrollRight linear infinite 50s;
+  animation: scrollRight linear infinite 25s;
 }
 @keyframes scrollLeft {
   from {
